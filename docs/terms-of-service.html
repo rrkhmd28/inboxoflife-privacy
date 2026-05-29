@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InboxOfLife 利用規約 / Terms of Service</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #1f2937; line-height: 1.8; background: #f9fafb; }
+  h1 { border-bottom: 2px solid #2B72D5; padding-bottom: 10px; }
+  h2 { color: #1e3a5f; margin-top: 2em; font-size: 1.3em; }
+  h3 { color: #333; margin-top: 1.5em; font-size: 1.1em; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .updated { font-size: 13px; color: #6b7280; margin-bottom: 24px; }
+  a { color: #2B72D5; }
+  .lang-switch { text-align: right; margin-bottom: 16px; }
+  .lang-switch a { font-size: 14px; text-decoration: none; padding: 4px 12px; border: 1px solid #2B72D5; border-radius: 4px; }
+  .section-en { display: none; }
+</style>
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.section-ja').forEach(el => el.style.display = lang === 'ja' ? 'block' : 'none');
+    document.querySelectorAll('.section-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+  }
+</script>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="javascript:switchLang('ja')">日本語</a>
+  <a href="javascript:switchLang('en')">English</a>
+</div>
+
+<!-- ==================== 日本語版 ==================== -->
+<div class="section-ja">
+
+<h1>InboxOfLife 利用規約</h1>
+<p class="updated">最終更新日: 2026年5月29日</p>
+
+<p>本利用規約（以下「本規約」）は、InboxOfLife（以下「本アプリ」）の利用に関する条件を定めるものです。本アプリをご利用いただくことにより、本規約に同意したものとみなします。</p>
+
+<h2>1. サービスの概要</h2>
+<p>本アプリは、タスク・予定・習慣・買い物・Wishlist・メモ・体調メモなど、ユーザーの日々の事柄を自然言語の入力欄に投げ込むだけで AI が自動分類し、整理するライフログアプリです。以下の機能を提供します：</p>
+<ul>
+  <li>AI による自然文入力のカテゴリ分類</li>
+  <li>タスク・予定・習慣・買い物・Wishlist の管理</li>
+  <li>メモ・体調メモ・活動ログの記録</li>
+  <li>カウントダウン・通知</li>
+  <li>日次／月次ビューによる振り返り</li>
+  <li>端末内データの JSON 形式でのエクスポート</li>
+</ul>
+
+<h2>2. 料金プランとサブスクリプション</h2>
+
+<h3>2.1 現在の提供形態</h3>
+<p>本アプリは現在、すべての機能を<strong>無料</strong>でご利用いただけます。</p>
+
+<h3>2.2 将来の有料化の可能性</h3>
+<p>将来、本アプリの一部または全部の機能を有料化（サブスクリプション・買い切り課金のいずれか）する可能性があります。有料化を行う場合は、以下を遵守します：</p>
+<ul>
+  <li>変更を実施する前に、アプリ内通知または本ページの更新によりユーザーに事前告知する</li>
+  <li>既存ユーザーが継続利用するか解約するかを選択できる猶予期間を設ける</li>
+  <li>有料機能が導入された場合は、本規約および App Store Connect の対応箇所に詳細（料金・期間・自動更新条件等）を明記する</li>
+</ul>
+<p>事前告知なくユーザーから直接料金を徴収することはありません。</p>
+
+<h2>3. サードパーティAIサービスの利用</h2>
+<p>本アプリは、自然文の自動分類のために、以下のサードパーティ AI サービスを利用しています：</p>
+<ul>
+  <li><strong>Google AI（Gemini）</strong> — 入力テキストのカテゴリ分類（主）に使用されます。</li>
+  <li><strong>OpenAI</strong> — Gemini 失敗時のフォールバック分類に使用されます。</li>
+</ul>
+<p>これらのサービスの利用にあたり、ユーザーがチャット入力欄に投稿した自然文と、AI 分類のための最小限の文脈情報（直近のチャット履歴、直近に保存したエントリの参照情報）が、本アプリの中継サーバー（Railway 上）を経由して送信されます。氏名・メールアドレス・位置情報などの個人を特定できる情報は送信されません。詳細はプライバシーポリシーをご確認ください。</p>
+
+<h2>4. AI生成コンテンツについて</h2>
+<p>本アプリのカテゴリ分類および提案は AI（人工知能）によって生成されます。AI の応答は参考情報であり、以下の点にご留意ください：</p>
+<ul>
+  <li>AI の分類結果には誤りが含まれる場合があります。</li>
+  <li>日付・時刻・数値などの抽出が常に正確であることを保証するものではありません。</li>
+  <li>誤分類が発生した場合は、アプリ内のチャットからカテゴリ修正・編集が可能です。</li>
+</ul>
+
+<h2>5. ユーザーの義務</h2>
+<p>ユーザーは以下の行為を行わないものとします：</p>
+<ul>
+  <li>本アプリを違法な目的で使用すること</li>
+  <li>AI 分類サーバーに対して違法・有害・攻撃的な内容を送信すること</li>
+  <li>本アプリのサーバーに過度な負荷をかけること（自動化された大量リクエストを含む）</li>
+  <li>本アプリのリバースエンジニアリング、改変、再配布を行うこと</li>
+  <li>認証トークン等のセキュリティ機構を回避・無効化すること</li>
+</ul>
+
+<h2>6. アカウントとデータ</h2>
+<ul>
+  <li>本アプリはアカウント機能を持ちません。すべてのデータはユーザーの端末内に保存されます。</li>
+  <li>端末内データの管理はユーザーの責任とします。</li>
+  <li>アプリ内の「設定」画面から、いつでも端末内のすべてのデータを JSON 形式でエクスポートできます。</li>
+  <li>本アプリを端末から削除（アンインストール）すると、端末内のデータは全て消去されます。</li>
+  <li>データ削除のご要望については、プライバシーポリシーの「データの削除」セクションをご確認ください。</li>
+</ul>
+
+<h2>7. 知的財産権</h2>
+<p>本アプリのデザイン、コンテンツ、ソースコードに関する知的財産権は提供者に帰属します。ユーザーが本アプリを通じて作成したコンテンツ（メモ・チャット履歴・タスク等）の権利はユーザーに帰属します。</p>
+
+<h2>8. サービスの変更・中断・終了</h2>
+<ul>
+  <li>本アプリの機能は<strong>予告なく追加・変更・削除</strong>される場合があります。</li>
+  <li>メンテナンス・サーバー障害・第三者サービスの仕様変更等により、一時的にサービスが利用できない場合があります。</li>
+  <li>提供者の判断により、<strong>本アプリのサービスを予告なく終了する場合があります</strong>。重要なデータについては、アプリ内の JSON エクスポート機能で適宜お手元に保存してください。</li>
+  <li>AI サービス提供元（Google、OpenAI）の仕様変更や障害により、AI 分類機能が利用できなくなる場合があります。その場合、入力は端末内にメモとして暫定保存され、データは失われません。</li>
+</ul>
+
+<h2>9. 免責事項</h2>
+<ul>
+  <li>本アプリは「現状のまま」提供されます。特定の目的への適合性や、業務利用への適合性は保証されません。</li>
+  <li>本アプリの利用によって生じた直接的・間接的な損害について、提供者は責任を負いません。</li>
+  <li>AI の応答内容・分類結果に起因する損害について、提供者は責任を負いません。</li>
+  <li>データの消失について、提供者は責任を負いません。重要なデータは JSON エクスポート機能を利用して定期的にバックアップしてください。</li>
+  <li>本アプリは医療・法律・金融などの専門的助言の代替を意図するものではありません。</li>
+</ul>
+
+<h2>10. 利用規約の変更</h2>
+<p>本規約は必要に応じて変更される場合があります。重要な変更がある場合は、本ページの「最終更新日」を更新し、必要に応じて App Store の説明欄でも告知します。変更後も本アプリの利用を継続した場合、変更後の規約に同意したものとみなします。</p>
+
+<h2>11. 個人情報の取扱い</h2>
+<p>本アプリにおける個人情報の取扱いについては、<a href="./privacy-policy.html">プライバシーポリシー</a>に定めるとおりとします。</p>
+
+<h2>12. 準拠法と管轄</h2>
+<p>本規約は日本法に準拠するものとし、本規約に関する紛争は東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+
+<h2>13. お問い合わせ</h2>
+<p>本規約に関するご質問は、以下までご連絡ください：</p>
+<p>お問い合わせフォーム: <a href="./contact.html">こちら</a></p>
+<p>メール: <a href="mailto:rrkhmd28@gmail.com">rrkhmd28@gmail.com</a></p>
+
+</div>
+
+<!-- ==================== English Version ==================== -->
+<div class="section-en">
+
+<h1>InboxOfLife Terms of Service</h1>
+<p class="updated">Last Updated: May 29, 2026</p>
+
+<p>These Terms of Service ("Terms") set forth the conditions for using InboxOfLife ("the App"). By using the App, you agree to these Terms.</p>
+
+<h2>1. Service Overview</h2>
+<p>The App is a life-logging app that lets you toss daily items — tasks, scheduled events, habits, shopping, wishlist, memos, health notes, and more — into a single natural-language input field, where AI automatically classifies and organizes them. The following features are provided:</p>
+<ul>
+  <li>AI-based category classification of free-form input</li>
+  <li>Management of tasks, events, habits, shopping items, and wishlist items</li>
+  <li>Recording of memos, health notes, and activity logs</li>
+  <li>Countdown and notifications</li>
+  <li>Daily and monthly views for retrospection</li>
+  <li>JSON export of on-device data</li>
+</ul>
+
+<h2>2. Pricing Plans and Subscriptions</h2>
+
+<h3>2.1 Current Offering</h3>
+<p>All features of the App are currently provided <strong>free of charge</strong>.</p>
+
+<h3>2.2 Possibility of Future Paid Plans</h3>
+<p>Some or all features of the App may become paid (either as a subscription or one-time purchase) in the future. If we introduce paid plans, we will:</p>
+<ul>
+  <li>Notify users in advance via in-app notice or by updating this page</li>
+  <li>Provide a transition period during which existing users may choose to continue or discontinue use</li>
+  <li>Document the details (pricing, duration, auto-renewal conditions, etc.) in these Terms and in the relevant App Store Connect sections at the time paid features are introduced</li>
+</ul>
+<p>We will not charge users directly without prior notice.</p>
+
+<h2>3. Third-Party AI Services</h2>
+<p>The App uses the following third-party AI services for automatic classification of free-form input:</p>
+<ul>
+  <li><strong>Google AI (Gemini)</strong> — Primary input classification.</li>
+  <li><strong>OpenAI</strong> — Fallback classification when Gemini fails.</li>
+</ul>
+<p>When using these services, the natural-language text you enter and a minimal context window (recent chat turns, references to recently saved entries) are sent through our relay server (hosted on Railway). Personally identifiable information such as name, email address, or location is not sent. Please refer to the Privacy Policy for details.</p>
+
+<h2>4. AI-Generated Content</h2>
+<p>Classifications and suggestions in the App are generated by AI (Artificial Intelligence). AI responses are provided as reference information. Please note:</p>
+<ul>
+  <li>AI classifications may contain errors.</li>
+  <li>Extraction of dates, times, and numeric values is not guaranteed to be 100% accurate.</li>
+  <li>If a misclassification occurs, you can correct the category or edit the entry from within the in-app chat.</li>
+</ul>
+
+<h2>5. User Obligations</h2>
+<p>Users shall not engage in the following activities:</p>
+<ul>
+  <li>Using the App for illegal purposes</li>
+  <li>Sending illegal, harmful, or offensive content to the AI classification server</li>
+  <li>Placing excessive load on the App's server (including automated bulk requests)</li>
+  <li>Reverse engineering, modifying, or redistributing the App</li>
+  <li>Circumventing or disabling security mechanisms such as authentication tokens</li>
+</ul>
+
+<h2>6. Accounts and Data</h2>
+<ul>
+  <li>The App has no account system. All data is stored on your device.</li>
+  <li>Users are responsible for managing on-device data.</li>
+  <li>You can export all on-device data as JSON at any time from the in-app Settings screen.</li>
+  <li>Uninstalling the App deletes all on-device data.</li>
+  <li>For data deletion requests, please refer to the "Data Deletion" section of the Privacy Policy.</li>
+</ul>
+
+<h2>7. Intellectual Property</h2>
+<p>Intellectual property rights related to the App's design, content, and source code belong to the provider. Rights to content created by users through the App (memos, chat history, tasks, etc.) belong to the user.</p>
+
+<h2>8. Service Changes, Interruption, and Termination</h2>
+<ul>
+  <li>Features of the App may be <strong>added, changed, or removed without prior notice</strong>.</li>
+  <li>The service may be temporarily unavailable due to maintenance, server issues, or changes by third-party services.</li>
+  <li>At the provider's discretion, <strong>the App's service may be terminated without prior notice</strong>. Please use the in-app JSON export feature to keep a local copy of any important data.</li>
+  <li>The AI classification feature may become unavailable due to specification changes or outages by AI service providers (Google, OpenAI). In such cases, input is provisionally saved as a memo on the device, and data is not lost.</li>
+</ul>
+
+<h2>9. Disclaimer</h2>
+<ul>
+  <li>The App is provided "as is." We do not warrant fitness for any particular purpose or suitability for business use.</li>
+  <li>The provider is not liable for any direct or indirect damages arising from the use of the App.</li>
+  <li>The provider is not liable for damages caused by AI response content or classification results.</li>
+  <li>The provider is not liable for data loss. Please regularly back up important data using the JSON export feature.</li>
+  <li>The App is not intended as a substitute for professional advice in medical, legal, financial, or other specialized domains.</li>
+</ul>
+
+<h2>10. Changes to Terms</h2>
+<p>These Terms may be updated as needed. For significant changes, we will update the "Last Updated" date on this page and, where appropriate, also note the update in the App Store description. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+
+<h2>11. Handling of Personal Information</h2>
+<p>Handling of personal information in the App is governed by the <a href="./privacy-policy.html">Privacy Policy</a>.</p>
+
+<h2>12. Governing Law and Jurisdiction</h2>
+<p>These Terms shall be governed by the laws of Japan. Any disputes related to these Terms shall be subject to the exclusive jurisdiction of the Tokyo District Court as the court of first instance.</p>
+
+<h2>13. Contact Us</h2>
+<p>For questions about these Terms, please contact us via:</p>
+<p>Contact form: <a href="./contact.html">here</a></p>
+<p>Email: <a href="mailto:rrkhmd28@gmail.com">rrkhmd28@gmail.com</a></p>
+
+</div>
+
+</body>
+</html>
