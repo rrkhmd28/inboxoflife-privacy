@@ -1,8 +1,0 @@
-title: InboxOfLife Privacy Policy
-description: Privacy policy for the InboxOfLife iOS app.
-theme: jekyll-theme-cayman
-
-# Clean URLs (so /en/ resolves without .html in some hosts; with the default
-# GitHub Pages Jekyll build, en.md → /en.html. Both forms are linked from the
-# index pages, so either URL form works.)
-permalink: pretty

@@ -1,22 +1,21 @@
 # inboxoflife-privacy
 
-Privacy policy for the [InboxOfLife](https://apps.apple.com/) iOS app, hosted via GitHub Pages.
+Privacy policy for the [InboxOfLife](https://apps.apple.com/) iOS app, hosted via GitHub Pages from the `/docs` folder.
 
-## Public URL
+## Public URLs
 
-After enabling GitHub Pages, this site is served at:
+After enabling GitHub Pages (Source = `main` branch, folder = `/docs`):
 
-- Japanese (default): `https://rrkhmd28.github.io/inboxoflife-privacy/`
-- English: `https://rrkhmd28.github.io/inboxoflife-privacy/en.html`
+- Privacy policy: `https://rrkhmd28.github.io/inboxoflife-privacy/privacy-policy.html`
+- Contact form: `https://rrkhmd28.github.io/inboxoflife-privacy/contact.html`
 
-This URL is the one submitted as the **Privacy Policy URL** in App Store Connect.
+The privacy policy URL is the one submitted as the **Privacy Policy URL** in App Store Connect.
 
 ## Files
 
-- `index.md` — Japanese privacy policy (primary)
-- `en.md` — English privacy policy
-- `_config.yml` — Jekyll config (theme + permalink)
+- `docs/privacy-policy.html` — bilingual privacy policy (Japanese / English, language switcher inline)
+- `docs/contact.html` — contact form (Formspree-backed, ID `mlgvzojd`)
 
 ## Updating
 
-Edit `index.md` / `en.md`, update the `**Last updated**` date at the top, commit, and push. GitHub Pages rebuilds automatically.
+Edit the HTML files in `docs/`, update the "最終更新日 / Last Updated" dates in the privacy policy when content changes, commit, and push. GitHub Pages rebuilds automatically.

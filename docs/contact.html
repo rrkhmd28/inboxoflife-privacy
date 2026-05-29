@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ — InboxOfLife</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 600px;
+           margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-size: 24px; }
+    label { display: block; margin-top: 16px; font-weight: bold; }
+    input, textarea, select {
+      width: 100%; padding: 10px; margin-top: 6px;
+      border: 1px solid #ccc; border-radius: 6px;
+      font-size: 16px; box-sizing: border-box;
+    }
+    textarea { height: 120px; }
+    button {
+      margin-top: 20px; padding: 12px 24px;
+      background: #2B72D5; color: white;
+      border: none; border-radius: 8px;
+      font-size: 16px; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>お問い合わせ</h1>
+  <p>InboxOfLife アプリに関するご質問・ご要望はこちらからどうぞ。</p>
+
+  <form action="https://formspree.io/f/mlgvzojd" method="POST">
+    <label>メールアドレス
+      <input type="email" name="email" required placeholder="your@email.com">
+    </label>
+
+    <label>お問い合わせ種別
+      <select name="category">
+        <option>アプリの不具合</option>
+        <option>機能のご要望</option>
+        <option>データ・プライバシーに関するお問い合わせ</option>
+        <option>その他</option>
+      </select>
+    </label>
+
+    <label>お問い合わせ内容
+      <textarea name="message" required placeholder="内容をご記入ください"></textarea>
+    </label>
+
+    <button type="submit">送信する</button>
+  </form>
+</body>
+</html>

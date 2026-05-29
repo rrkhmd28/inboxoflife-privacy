@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InboxOfLife プライバシーポリシー / Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #1f2937; line-height: 1.8; background: #f9fafb; }
+  h1 { font-size: 22px; border-bottom: 2px solid #2B72D5; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1e3a5f; }
+  h3 { font-size: 15px; margin-top: 16px; color: #374151; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .updated { font-size: 13px; color: #6b7280; margin-bottom: 24px; }
+  a { color: #2B72D5; }
+  .lang-switch { text-align: right; margin-bottom: 16px; }
+  .lang-switch a { font-size: 14px; text-decoration: none; padding: 4px 12px; border: 1px solid #2B72D5; border-radius: 4px; }
+  .section-en { display: none; }
+</style>
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.section-ja').forEach(el => el.style.display = lang === 'ja' ? 'block' : 'none');
+    document.querySelectorAll('.section-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+  }
+</script>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="javascript:switchLang('ja')">日本語</a>
+  <a href="javascript:switchLang('en')">English</a>
+</div>
+
+<!-- ==================== 日本語版 ==================== -->
+<div class="section-ja">
+
+<h1>InboxOfLife プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年5月29日</p>
+
+<p>InboxOfLife（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーでは、本アプリが収集・利用するデータについて説明します。本アプリはローカルファースト設計であり、ユーザーが入力した情報は原則として端末内のローカルデータベースにのみ保存されます。</p>
+
+<h2>1. 収集する情報</h2>
+
+<h3>（1）端末内に保存されるデータ</h3>
+<ul>
+  <li>ユーザーが入力したタスク・予定・習慣・買い物リスト・Wishlist・メモ・体調メモ・活動ログ</li>
+  <li>入力時刻および更新時刻</li>
+  <li>アプリ内のチャット履歴（過去の入力と分類結果）</li>
+  <li>アプリ設定（通知設定、ホーム画面の表示優先度など）</li>
+</ul>
+<p>これらのデータは端末のローカルストレージ（SQLite / WatermelonDB）に保存され、開発者および第三者は直接アクセスできません。本アプリを端末から削除すると同時に削除されます。</p>
+
+<h3>（2）AI 分類のためにサーバーに送信されるデータ</h3>
+<p>ユーザーがチャット入力欄に投稿した自然文を AI が分類するため、以下の情報が開発者の運用する中継サーバー（Railway 上）に送信されます：</p>
+<ul>
+  <li>ユーザーが入力した自然文テキスト</li>
+  <li>直近のチャット会話の数件（文脈窓）</li>
+  <li>直近に保存したエントリの参照情報（タイトル・カテゴリ・ID）</li>
+  <li>開いている習慣・買い物・タスク・Wishlist のタイトル一覧（既存項目の完了報告を認識するため）</li>
+</ul>
+<p>中継サーバーはリクエストを受け取った後、AI サービス（Google Gemini、OpenAI）に転送し、結果をユーザーの端末に返します。<strong>中継サーバーではリクエスト本文を永続化しません</strong>。氏名、メールアドレス、位置情報、その他の個人を特定できる情報は送信されません。</p>
+<p>AI プロバイダー（Google、OpenAI）側では、サービスの改善や不正利用の検出を目的として、各社のポリシーに従って一定期間ログが保持されることがあります。詳細は各プロバイダーの利用規約およびプライバシーポリシーをご確認ください。</p>
+
+<h3>（3）サーバー側アクセスログ</h3>
+<p>ホスティング事業者（Railway）の標準仕様により、以下のメタデータがアクセスログとして短期間保持されます：</p>
+<ul>
+  <li>IP アドレス</li>
+  <li>リクエスト日時</li>
+  <li>HTTP ステータスコード</li>
+  <li>エンドポイントパス</li>
+</ul>
+<p>これらは障害調査および不正アクセス検知のためにのみ参照され、外部に提供することはありません。</p>
+
+<h3>（4）収集しない情報</h3>
+<p>本アプリは以下の情報を収集しません：</p>
+<ul>
+  <li>アカウント情報（本アプリはログイン機能を持ちません）</li>
+  <li>氏名・電話番号・住所</li>
+  <li>連絡先（アドレス帳）</li>
+  <li>位置情報（GPS）</li>
+  <li>写真・カメラ</li>
+  <li>HealthKit / Apple Health データ</li>
+  <li>広告識別子（IDFA）</li>
+  <li>アプリ内行動の解析・トラッキング</li>
+</ul>
+
+<h2>2. 第三者サービスの利用</h2>
+<p>本アプリは以下の第三者サービスを利用しています：</p>
+<ul>
+  <li><strong>Google AI（Gemini）</strong> — 入力テキストのカテゴリ分類（主）に使用。<a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a>が適用されます。</li>
+  <li><strong>OpenAI</strong> — Gemini 失敗時のフォールバック分類に使用。<a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI プライバシーポリシー</a>が適用されます。</li>
+  <li><strong>Railway</strong> — AI 分類中継サーバーのホスティングに使用。<a href="https://railway.com/legal/privacy" target="_blank">Railway プライバシーポリシー</a>が適用されます。</li>
+  <li><strong>Apple App Store</strong> — アプリ配信に使用。<a href="https://www.apple.com/legal/privacy/" target="_blank">Apple プライバシーポリシー</a>が適用されます。</li>
+</ul>
+
+<h2>3. データの保存と管理</h2>
+<ul>
+  <li><strong>ローカルデータ</strong>: 端末の SQLite データベースに保存されます。本アプリを削除するとデータも削除されます。</li>
+  <li><strong>中継サーバー</strong>: AI 分類のリクエスト本文は永続化されません。</li>
+  <li><strong>第三者 AI</strong>: 送信先である Google および OpenAI のデータ保持ポリシーに従います。</li>
+</ul>
+
+<h2>4. データの削除</h2>
+<p>ユーザーは以下の方法でデータを削除できます：</p>
+<ul>
+  <li><strong>端末内データの全削除</strong>: 本アプリを端末から削除（アンインストール）すると、ローカルに保存された全データが自動的に削除されます。</li>
+  <li><strong>個別データの削除</strong>: アプリ内の各リストおよび詳細画面から、個別エントリを削除できます。</li>
+</ul>
+<p>本アプリはアカウント機能を持たないため、アカウント削除の手続きは不要です。データ削除に関するご要望がある場合は、下記のお問い合わせ先までメールにてご連絡ください。</p>
+
+<h2>5. データのエクスポート</h2>
+<p>ユーザーは、アプリ内の「設定」画面から端末内のすべてのデータを JSON 形式でエクスポートできます。これにより、いつでも自分のデータを取り出すことが可能です。</p>
+
+<h2>6. データの共有</h2>
+<p>本アプリは、上記の第三者サービスを除き、ユーザーの情報を第三者に販売・共有・譲渡することはありません。広告 SDK やアナリティクスツールは導入しておらず、ユーザーのトラッキングは行いません。</p>
+
+<h2>7. お子様のプライバシー</h2>
+<p>本アプリは 13 歳未満のお子様を対象としていません。13 歳未満のお子様の個人情報を意図的に収集することはありません。13 歳未満のお子様の個人情報が収集されたことが判明した場合、速やかに当該情報を削除いたします。</p>
+
+<h2>8. セキュリティ</h2>
+<p>本アプリは HTTPS 通信を使用してデータを暗号化して送信します。API キーはサーバー側で管理され、アプリ内には保存されません。中継サーバーは共有トークンによる認証を要求し、想定外のクライアントからのアクセスを防いでいます。ただし、インターネット上のデータ送信において完全な安全性を保証することはできません。重要な機密情報は本アプリに入力しないことをお勧めします。</p>
+
+<h2>9. プライバシーポリシーの変更</h2>
+<p>本ポリシーは必要に応じて変更される場合があります。重要な変更がある場合は、本ページの「最終更新日」を更新し、必要に応じて App Store の説明欄でも告知します。変更後も本アプリの利用を継続した場合、変更後のポリシーに同意したものとみなします。</p>
+
+<h2>10. お問い合わせ</h2>
+<p>プライバシーに関するご質問やデータ削除のご要望は、以下までご連絡ください：</p>
+<p>お問い合わせフォーム: <a href="./contact.html">こちら</a></p>
+<p>メール: <a href="mailto:rrkhmd28@gmail.com">rrkhmd28@gmail.com</a></p>
+
+</div>
+
+<!-- ==================== English Version ==================== -->
+<div class="section-en">
+
+<h1>InboxOfLife Privacy Policy</h1>
+<p class="updated">Last Updated: May 29, 2026</p>
+
+<p>InboxOfLife ("the App") respects user privacy and is committed to protecting personal information. This Privacy Policy explains what data the App collects and how it is used. The App is local-first: content the user enters is, as a rule, stored only in a local database on the user's device.</p>
+
+<h2>1. Information We Collect</h2>
+
+<h3>(1) Data Stored on Your Device</h3>
+<ul>
+  <li>Tasks, scheduled events, habits, shopping items, wishlist items, memos, health notes, and activity logs entered by you</li>
+  <li>Creation and update timestamps</li>
+  <li>In-app chat history (previous inputs and their classification results)</li>
+  <li>App preferences (notification settings, home-screen display priorities, etc.)</li>
+</ul>
+<p>This data is stored in the device's local database (SQLite / WatermelonDB) and is not directly accessible to the Developer or any third party. It is removed from the device when the App is uninstalled.</p>
+
+<h3>(2) Data Sent to the Server for AI Classification</h3>
+<p>To classify your free-form input into the correct category, the following is sent to the Developer's relay server (hosted on Railway):</p>
+<ul>
+  <li>The natural-language text you entered</li>
+  <li>A few of the most recent chat turns (context window)</li>
+  <li>References (title, category, id) to recently saved entries</li>
+  <li>Titles of currently open habits, shopping items, tasks, and wishlist items (so the AI can recognize completion reports for existing items)</li>
+</ul>
+<p>The relay server forwards the request to AI services (Google Gemini, OpenAI) and returns the result to your device. <strong>The relay server does not persist the request body.</strong> Names, email addresses, location data, and other personally identifiable information are not sent.</p>
+<p>The AI providers (Google, OpenAI) may retain logs for a limited period according to their own policies, for the purpose of service improvement and abuse detection. Please refer to each provider's terms of service and privacy policy for details.</p>
+
+<h3>(3) Server-side Access Logs</h3>
+<p>By default behavior of the hosting provider (Railway), the following access-log metadata is retained for a short period:</p>
+<ul>
+  <li>IP address</li>
+  <li>Request timestamp</li>
+  <li>HTTP status code</li>
+  <li>Endpoint path</li>
+</ul>
+<p>These are used only for incident investigation and abuse detection. They are not shared with third parties.</p>
+
+<h3>(4) What We Do Not Collect</h3>
+<p>The App does not collect:</p>
+<ul>
+  <li>Account information (the App has no sign-in)</li>
+  <li>Name, phone number, or address</li>
+  <li>Contacts (address book)</li>
+  <li>Location (GPS)</li>
+  <li>Photos or camera data</li>
+  <li>HealthKit / Apple Health data</li>
+  <li>The advertising identifier (IDFA)</li>
+  <li>In-app behavioral analytics or tracking</li>
+</ul>
+
+<h2>2. Third-Party Services</h2>
+<p>The App uses the following third-party services:</p>
+<ul>
+  <li><strong>Google AI (Gemini)</strong> — Primary input classification. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> applies.</li>
+  <li><strong>OpenAI</strong> — Fallback classification when Gemini fails. <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a> applies.</li>
+  <li><strong>Railway</strong> — Hosting for the classification relay server. <a href="https://railway.com/legal/privacy" target="_blank">Railway Privacy Policy</a> applies.</li>
+  <li><strong>Apple App Store</strong> — App distribution. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a> applies.</li>
+</ul>
+
+<h2>3. Data Storage and Management</h2>
+<ul>
+  <li><strong>Local Data</strong>: Stored in the device's SQLite database. Data is deleted when you uninstall the App.</li>
+  <li><strong>Relay Server</strong>: AI classification request bodies are not persisted.</li>
+  <li><strong>Third-party AI</strong>: Data is retained per Google and OpenAI's own policies.</li>
+</ul>
+
+<h2>4. Data Deletion</h2>
+<p>You can delete your data in the following ways:</p>
+<ul>
+  <li><strong>All on-device data</strong>: Uninstalling the App from your device automatically deletes all locally stored data.</li>
+  <li><strong>Individual entries</strong>: You can delete individual items from each list and detail screen within the App.</li>
+</ul>
+<p>The App has no account system, so account deletion is not required. If you have other data deletion requests, please contact us at the email address below.</p>
+
+<h2>5. Data Export</h2>
+<p>You can export all on-device data as JSON from the in-app Settings screen at any time.</p>
+
+<h2>6. Data Sharing</h2>
+<p>The App does not sell, share, or transfer your information to third parties, except through the third-party services described above. No advertising SDKs or analytics tools are integrated, and no user tracking is performed.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that personal information of a child under 13 has been collected, we will promptly delete such information.</p>
+
+<h2>8. Security</h2>
+<p>The App uses HTTPS to encrypt data in transit. API keys are managed on the server side and are not stored within the App. The relay server requires a shared-token authentication to prevent access from unexpected clients. However, no method of data transmission over the Internet is guaranteed to be completely secure. We recommend that you do not enter highly confidential information into the App.</p>
+
+<h2>9. Changes to This Privacy Policy</h2>
+<p>This Policy may be updated as needed. If significant changes are made, we will update the "Last Updated" date on this page, and where appropriate, also note the update in the App Store description. Continued use of the App after changes constitutes acceptance of the updated Policy.</p>
+
+<h2>10. Contact Us</h2>
+<p>For privacy-related questions or data deletion requests, please contact us via:</p>
+<p>Contact form: <a href="./contact.html">here</a></p>
+<p>Email: <a href="mailto:rrkhmd28@gmail.com">rrkhmd28@gmail.com</a></p>
+
+</div>
+
+</body>
+</html>
